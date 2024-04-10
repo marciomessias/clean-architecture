@@ -106,6 +106,16 @@ describe("Order repository test", () => {
 
     order.changeCustomerId("456");
 
+    const orderItem2 = new OrderItem(
+      "2",
+      product.name,
+      product.price,
+      product.id,
+      4
+    );
+
+    order.changeItens([orderItem2]);
+
     await orderRepository.update(order);
 
     const orderModel = await OrderModel.findOne({
@@ -119,10 +129,10 @@ describe("Order repository test", () => {
       total: order.total(),
       items: [
         {
-          id: orderItem.id,
-          name: orderItem.name,
-          price: orderItem.price,
-          quantity: orderItem.quantity,
+          id: orderItem2.id,
+          name: orderItem2.name,
+          price: orderItem2.price,
+          quantity: orderItem2.quantity,
           order_id: "123",
           product_id: "123",
         }

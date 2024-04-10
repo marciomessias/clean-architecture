@@ -31,6 +31,13 @@ export default class Order {
     this._customerId = customerId;
   }
 
+  changeItens(items: OrderItem[]) {
+    this._items = items;
+    if (this._items.some((item) => item.quantity <= 0)) {
+      throw new Error("Quantity must be greater than 0");
+    }
+  }
+
   validate(): boolean {
     if (this._id.length === 0) {
       throw new Error("Id is required");
