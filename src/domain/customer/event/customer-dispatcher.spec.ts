@@ -1,11 +1,11 @@
-import EventDispatcher from "../@shared/event-dispatcher";
-import CustomerCreatedEvent from "../customer/customer-created.events";
-import EnviaConsoleLog1Handler from "../customer/handler/envia-console-log1.handler";
-import EnviaConsoleLog2Handler from "../customer/handler/envia-console-log2.handler";
-import CustomerChangedAddressEvent from "../customer/customer-changed-address.event";
-import EnviaConsoleLogHandler from "../customer/handler/envia-console-log.handler";
-import Customer from "../../domain/entity/customer";
-import Address from "../../domain/entity/address";
+import EventDispatcher from "../../@shared/event/event-dispatcher";
+import CustomerCreatedEvent from "./customer-created.events";
+import EnviaConsoleLog1Handler from "./handler/envia-console-log1.handler";
+import EnviaConsoleLog2Handler from "./handler/envia-console-log2.handler";
+import Customer from "../entity/customer";
+import Address from "../value-object/address";
+import EnviaConsoleLogHandler from "./handler/envia-console-log.handler";
+import CustomerChangedAddressEvent from "./customer-changed-address.event";
 
 describe("Customer domain events unit tests", () => {
 
