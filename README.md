@@ -1,6 +1,6 @@
 ## Projeto em TypeScript - Clean Architecture
 
-### Desafio de usecases
+### Desafios Clean Arch
 
 ##### Use cases para Product
 
@@ -23,3 +23,10 @@ Implementação notification pattern Product
 * Nesse desafio você deverá utilizar o padrão notification em nossa entidade Products
 * Não deixe de realizar os testes automatizados
 * Adicione um teste que acumule dois erros ao mesmo tempo. 
+
+##### Validação de Products
+
+Implementação validator
+
+* Agora que aprendemos a criar o processo de validação, bem como minimizar o acoplamento em nosso domínio, você deverá realizar o processo de validação na entidade Product seguindo o mesmo processo.
+* OBS: Não deixe de verificar se todos os testes ainda estão passando.
