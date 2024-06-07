@@ -28,7 +28,7 @@ export default class Customer extends Entity {
   }
 
   validate() {
-    if (this.id.length === 0) {
+    if (this._id.length === 0) {
       this.notification.addError({
         message: "Id is required",
         context: "customer" 
