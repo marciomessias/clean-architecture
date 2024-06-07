@@ -15,3 +15,11 @@ Criação do API realizando as operações: "create, "list"
 
 * Da mesma forma que fizemos a listagem dos nossos Customers em nossa API, repita o mesmo processo e realize a listagem de Products
 * Não deixe de realizar o teste automatizado end-to-end.
+
+##### Notification Pattern em Products
+
+Implementação notification pattern Product
+
+* Nesse desafio você deverá utilizar o padrão notification em nossa entidade Products
+* Não deixe de realizar os testes automatizados
+* Adicione um teste que acumule dois erros ao mesmo tempo. 
